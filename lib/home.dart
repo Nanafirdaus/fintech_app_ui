@@ -1,5 +1,6 @@
 import 'package:fintech_app_ui/utils/extension.dart';
 import 'package:fintech_app_ui/widgets/services.dart';
+
 import 'package:fintech_app_ui/widgets/trans_tile.dart';
 import 'package:flutter/material.dart';
 
