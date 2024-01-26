@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.only(top: 15, left: 15, right: 15),
+          padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
           child: ListView(
             children: [
               SizedBox(
@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: context.screenHeight * .04,
+                height: context.screenHeight * .01,
               ),
               const Padding(
                 padding: EdgeInsets.only(top: 25, bottom: 12),
@@ -145,9 +145,7 @@ class HomeScreen extends StatelessWidget {
                   date: "12 June 2021",
                   amount: "320,000"),
               const TransactionTile(
-                  name: "John Doe Amin",
-                  date: "8 July 2021",
-                  amount: "100,000"),
+                  name: "John Doe", date: "8 July 2021", amount: "100,000"),
               const TransactionTile(
                   name: "Emma Samuel",
                   date: "8 November 2021",
@@ -156,6 +154,28 @@ class HomeScreen extends StatelessWidget {
                   name: "Kelvin Hart", date: "11 May 2021", amount: "900,000"),
             ],
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: const Color.fromARGB(255, 28, 58, 107),
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_rounded),
+              label: "Home",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.show_chart_rounded),
+              label: "Finance",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.monetization_on),
+              label: "Subscription",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.more_horiz_outlined),
+              label: "More",
+            ),
+          ],
         ),
       ),
     );
